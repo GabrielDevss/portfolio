@@ -1,0 +1,283 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+  --green: #00FF00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration:  none;
+}
+
+html{
+  display: flex;
+  font-size: 62.5%;
+}
+
+
+
+body, button, input, textarea {
+  font-size: clamp(14px, 1.6rem, 2vw);
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: var(--body-bg-color);
+}
+
+.sidebar {
+  width: 34.8rem;
+  height: 29.2rem;
+  border-radius: 2rem;
+  color: var(--bg-cards);
+  margin: 4.0rem;
+}
+
+.sidebar .profile {
+  background: var(--bg-cards);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 2.0rem;
+}
+
+.sidebar .profile img {
+  height: 12.8rem;
+  width: 12.8rem;
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  margin-top: 3.2rem;
+}
+
+.sidebar .profile h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-top: 3.0rem;
+}
+
+.sidebar .profile p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--text-color);
+  margin: 1.0rem;
+  margin-bottom: 4.9rem;
+}
+
+.socialInformation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 34.8rem;
+  height: 34.8rem;
+  background: var(--bg-cards);
+
+  border-radius: 2.0rem;
+  color: var(--text-color);
+  margin-top: 3.0rem;
+}
+
+.socialInformation .socialProfile {
+  list-style: none;
+}
+
+.socialInformation .socialProfile li{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2.0rem;
+}
+.socialInformation .socialProfile li img {
+  color: var(--text-color);
+  margin-right: 2.0rem;
+}
+
+.technologies {
+  width: 34.8rem;
+  height: 20.8rem;
+  padding: 3.0rem  2.0rem;
+
+  background:  var(--bg-cards);
+  color: var(--text-color);
+  border-radius: 2.0rem;
+  margin-top: 3.0rem;
+}
+
+.technologies h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.technologies ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: .5rem;
+}
+
+.technologies ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px;
+  background: var(--bg-techs);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  border-radius: 3.0rem;
+  color: black;
+}
+
+.sideBarList {
+  width: 34.8rem;
+  height: 34.9rem;
+  background: var(--bg-cards);
+  border-radius: 2rem;
+  margin-top: 3rem;
+  color: var(--text-color);
+  padding: 3rem;
+}
+
+.sideBarList h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.sideBarList ul {
+  margin-left: 4rem;
+}
+
+.sideBarList ul li {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.sideBarList strong {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.content {
+  margin: 4rem 3rem;
+}
+
+.content .header {
+ height: 8.6rem;
+
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+
+ background: var(--bg-cards);
+ border-radius: 2rem;
+ padding: 0 3rem;
+
+ color: var(--text-color);
+}
+
+.content .header h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.content .header p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.cardProjectContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.cardProject { 
+  background: var(--bg-cards);
+  border-radius: 2rem;
+  padding: 3.2rem;
+  color: var(--text-color);
+}
+.cardProject .nameCard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.cardProject .nameCard  span{
+ margin-left: 1.8rem;
+ font-size: 1.6rem;
+ font-weight: 700;
+}
+.cardProject p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 4.8rem;
+}
+
+.cardProject .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardProject .footer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardProject .footer span {
+   margin: .8rem; 
+}
+
+.recentPosts {
+  margin-top: 3rem
+}
+
+.cardPosts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bg-cards);
+  border-radius: 2rem;
+  margin-top: 3rem;
+  padding: 3rem;
+  color: var(--text-color);
+}
+
+.cardPosts img {
+  width: 12.8rem;
+  height: 12.8rem;
+  clip-path: circle();
+  margin-right: 2rem;
+}
+
+.cardPosts .contentPost h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.cardPosts .contentPost span {
+  font-size: 1.4rem;
+}
+
+.cardPosts .contentPost p {
+  font-size: 1.6rem;
+  margin-top: 2.8rem;
+}
